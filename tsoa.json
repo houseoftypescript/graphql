@@ -1,0 +1,24 @@
+{
+  "entryFile": "src/app.ts",
+  "noImplicitAdditionalProperties": "throw-on-extras",
+  "controllerPathGlobs": ["src/modules/**/*.controller.ts"],
+  "spec": {
+    "outputDirectory": "docs",
+    "specVersion": 3,
+    "spec": {
+      "servers": [
+        {
+          "url": "http://localhost:8080",
+          "description": "Local"
+        },
+        {
+          "url": "https://homapis.vercel.app",
+          "description": "Vercel"
+        }
+      ]
+    }
+  },
+  "routes": {
+    "routesDir": "src"
+  }
+}
